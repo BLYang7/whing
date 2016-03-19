@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/my_focus_item_height"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+     >
+    
+    <com.whing.imgcut.CircleImg
+        android:id="@+id/act_member_item_user_image"
+        android:layout_width="@dimen/simple_message_image_dimen"
+        android:layout_height="@dimen/simple_message_image_dimen"
+        android:layout_marginLeft="@dimen/simple_message_image_margin_left"
+      	android:layout_marginTop="@dimen/simple_message_image_margin_top"
+        android:layout_marginBottom="@dimen/simple_message_image_margin_bottom"
+        android:layout_gravity="center_vertical"
+        />
+    
+    
+    <TextView
+        android:id="@+id/act_member_item_user_name"
+        android:layout_width="@dimen/simple_letter_text_width"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="null"
+        android:textSize="@dimen/my_focus_item_text_size_plus"
+        android:textColor="@color/color_blue"
+        android:padding="@dimen/simple_letter_text_padding"
+        />
+
+</LinearLayout>

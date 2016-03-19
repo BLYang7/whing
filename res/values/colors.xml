@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="color_white">#fefefe</color>
+    <color name="color_blue">#33cccc</color>
+    <color name="color_hyaline">#00000000</color>
+    <color name="color_dark_yellow">#dda239</color>
+    <color name="color_yellow">#ffcc66</color>
+    <color name="color_gray">#888889</color>
+    <color name="color_text_gray">#787878</color>
+    
+    <color name="color_little_blue">#A4C2BB</color>
+    <color name="color_dark_blue">#549185</color>
+    
+    <color name="menu_left_text_color">#ff959595</color>
+</resources>

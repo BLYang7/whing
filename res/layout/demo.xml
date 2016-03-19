@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+                android:id="@+id/tab04"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/register_margin_left"
+                    android:layout_marginRight="@dimen/register_margin_right"
+                    android:layout_marginTop="@dimen/register_margin_bottom"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/register_padding_bottom"
+                    android:paddingTop="@dimen/register_padding_top" >
+
+                    <TextView
+                        android:layout_width="@dimen/inf_show_text_view_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+                        android:text="@string/register_user_nickname"
+                        android:textSize="@dimen/text_size" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/my_inf_user_nickname_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginRight="@dimen/text_view_margin_left"
+                        android:background="@drawable/register_text_bg"
+                        android:text="temp" >
+                    </EditText>
+                </LinearLayout>
+
+                
+               
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/register_margin_left"
+                    android:layout_marginRight="@dimen/register_margin_right"
+                    android:layout_marginTop="@dimen/register_margin_bottom"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/register_padding_bottom"
+                    android:paddingTop="@dimen/register_padding_top" >
+
+                    <TextView
+                        android:layout_width="@dimen/inf_show_text_view_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+                        android:text="@string/register_user_mobile"
+                        android:textSize="@dimen/text_size" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/my_inf_user_mobile_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginRight="@dimen/text_view_margin_left"
+                        android:background="@drawable/register_text_bg"
+                        android:text="temp" >
+                    </EditText>
+                </LinearLayout>
+                
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/register_margin_left"
+                    android:layout_marginRight="@dimen/register_margin_right"
+                    android:layout_marginTop="@dimen/register_margin_bottom"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/register_padding_bottom"
+                    android:paddingTop="@dimen/register_padding_top" >
+
+                    <TextView
+                        android:layout_width="@dimen/inf_show_text_view_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+                        android:text="@string/register_user_qq"
+                        android:textSize="@dimen/text_size" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/my_inf_user_qq_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginRight="@dimen/text_view_margin_left"
+                        android:background="@drawable/register_text_bg"
+                        android:text="temp" >
+                    </EditText>
+                </LinearLayout>
+                
+               
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/register_margin_left"
+                    android:layout_marginRight="@dimen/register_margin_right"
+                    android:layout_marginTop="@dimen/register_margin_bottom"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/register_padding_bottom"
+                    android:paddingTop="@dimen/register_padding_top" >
+
+                    <TextView
+                        android:layout_width="@dimen/inf_show_text_view_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+                        android:text="@string/register_user_interest"
+                        android:textSize="@dimen/text_size" >
+                    </TextView>
+
+                    
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical">
+
+                    <CheckBox
+                        android:id="@+id/interest_1"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:background="@color/color_blue"
+                        android:padding="0dp"
+                        android:text="@string/interest_1"
+                        android:textSize="@dimen/my_inf_small_button_text_size" />
+                    
+                    <Button
+                        android:id="@+id/interest_2"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:text="@string/interest_2"
+                        android:padding="0dp"
+                        android:background="@color/color_blue"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                    <Button
+                        android:id="@+id/interest_3"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:text="@string/interest_3"
+                        android:padding="0dp"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                    <Button
+                        android:id="@+id/interest_4"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:text="@string/interest_4"
+                        android:padding="0dp"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                    <Button
+                        android:id="@+id/interest_5"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:padding="0dp"
+                        android:text="@string/interest_5"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                </LinearLayout>
+                
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical">
+                    
+                    <Button
+                        android:id="@+id/interest_6"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:text="@string/interest_6"
+                        android:padding="0dp"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                    <Button
+                        android:id="@+id/interest_7"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:text="@string/interest_7"
+                        android:padding="0dp"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                    <Button
+                        android:id="@+id/interest_8"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:text="@string/interest_8"
+                        android:padding="0dp"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                    <Button
+                        android:id="@+id/interest_9"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:text="@string/interest_9"
+                        android:padding="0dp"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                    <Button
+                        android:id="@+id/interest_10"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:padding="0dp"
+                        android:layout_marginLeft="@dimen/my_inf_small_button_margin_left"
+                        android:background="@color/color_gray"
+                        android:text="@string/interest_10"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                </LinearLayout>
+                
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical">
+                    
+                    <Button
+                        android:id="@+id/interest_11"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:text="@string/interest_11"
+                        android:padding="0dp"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                    <Button
+                        android:id="@+id/interest_12"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:text="@string/interest_12"
+                        android:padding="0dp"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                    <Button
+                        android:id="@+id/interest_13"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:text="@string/interest_13"
+                        android:padding="0dp"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                    <Button
+                        android:id="@+id/interest_14"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:text="@string/interest_14"
+                        android:padding="0dp"
+                        android:background="@color/color_hyaline"
+                        android:layout_marginTop="@dimen/my_inf_small_button_margin_top"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                    <Button
+                        android:id="@+id/interest_15"
+                        android:layout_width="@dimen/my_inf_small_button_width"
+                        android:layout_height="@dimen/my_inf_small_button_height"
+                        android:padding="0dp"
+                        android:layout_marginLeft="@dimen/my_inf_small_button_margin_left"
+                        android:layout_marginTop="@dimen/my_inf_small_button_margin_top"
+                        android:background="@color/color_hyaline"
+                        android:text="@string/interest_15"
+                        android:textSize="@dimen/my_inf_small_button_text_size"/>
+                    
+                </LinearLayout>
+                
+                
+                <Button
+           			android:id="@+id/my_inf_change_inf_ensure"
+            		android:layout_width="@dimen/user_new_one_accept_size"
+            		android:layout_height="@dimen/user_new_one_accept_size"
+            		android:layout_gravity="right"
+            		android:layout_marginRight="@dimen/my_inf_ensure_button_margin_right"
+            		android:layout_marginTop="@dimen/my_inf_ensure_button_margin_top"
+            		
+            		android:background="@drawable/radio_button_new_one_normal"
+            		android:text="@string/my_inf_change_ensure"
+            		android:textColor="@android:color/white"
+            		android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+</LinearLayout>

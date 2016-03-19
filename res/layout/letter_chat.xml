@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:background="@drawable/navigation_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/letter_chat_navigation_left"
+            android:layout_width="@dimen/navigation_back_width"
+            android:layout_height="@dimen/navigation_back_height"
+            android:layout_marginLeft="@dimen/navigation_logo_left_margin"
+            android:background="@drawable/navigation_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/navigation_text_logo_margin"
+            android:layout_marginRight="@dimen/new_one_right_margin"
+            android:layout_weight="0.79"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/letter_chat_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/new_one_text_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ListView
+            android:id="@+id/letter_chat_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginLeft="@dimen/letter_chat_listview_margin"
+            android:layout_marginRight="@dimen/letter_chat_listview_margin"
+            android:layout_marginTop="@dimen/letter_chat_listview_margin"
+            android:layout_above="@+id/msglayout"
+            />
+
+    <LinearLayout
+        android:id="@+id/msglayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/layout_bg1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/letter_chat_message"
+            android:layout_width="@dimen/letter_chat_textedit_width"
+            android:layout_height="@dimen/letter_chat_textedit_height"
+            android:layout_weight="1"
+            android:background="@drawable/edittext1"
+            android:ems="10"
+            android:text=""
+            android:textSize="18sp" >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/letter_chat_btn_send"
+            android:layout_width="@dimen/letter_chat_button_width"
+            android:layout_height="@dimen/letter_chat_textedit_height"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:text="@string/letter_chat_send" />
+    </LinearLayout>
+
+     </RelativeLayout>
+    
+</LinearLayout>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:background="@drawable/navigation_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/inf_show_navigation_left"
+            android:layout_width="@dimen/navigation_back_width"
+            android:layout_height="@dimen/navigation_back_height"
+            android:layout_marginLeft="@dimen/navigation_logo_left_margin"
+            android:background="@drawable/navigation_back" />
+
+        <TextView
+            android:id="@+id/inf_show_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/navigation_text_logo_margin"
+            android:layout_marginRight="@dimen/new_one_right_margin"
+            android:layout_weight="0.79"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/inf_show_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/new_one_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginLeft="@dimen/inf_show_user_image_margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/inf_show_user_image_padding_bottom"
+        android:paddingTop="@dimen/inf_show_user_image_padding_top" >
+
+        <com.whing.imgcut.CircleImg
+            android:id="@+id/inf_show_user_image"
+            android:layout_width="@dimen/user_image_standard"
+            android:layout_height="@dimen/user_image_standard" />
+
+        <ImageView
+            android:id="@+id/inf_show_user_gender_image"
+            android:layout_width="@dimen/inf_show_user_gender_image_width"
+            android:layout_height="@dimen/inf_show_user_gender_image_height"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:scaleType="fitXY"
+            android:src="@drawable/female" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/inf_show_user_account_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/user_image_margin_left"
+            android:text="temp"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/user_name_size" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/inf_show_user_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/inf_show_user_image_margin_left"
+            android:gravity="right"
+            android:text="@string/inf_show_user_letter"
+            android:textColor="@color/color_dark_yellow"
+            android:textSize="@dimen/inf_show_user_letter_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inf_show_user_image_bottom_line_height"
+        android:layout_marginLeft="@dimen/inf_show_user_image_bottom_line_margin_left"
+        android:background="@drawable/ic_divider_horizonal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_margin_left"
+        android:layout_marginRight="@dimen/register_margin_right"
+        android:layout_marginTop="@dimen/register_margin_bottom"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/register_padding_bottom"
+        android:paddingTop="@dimen/register_padding_top" >
+
+        <TextView
+            android:layout_width="@dimen/inf_show_text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+            android:text="@string/register_user_real_name"
+            android:textSize="@dimen/text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/inf_show_user_real_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_view_margin_left"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_margin_left"
+        android:layout_marginRight="@dimen/register_margin_right"
+        android:layout_marginTop="@dimen/register_margin_bottom"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/register_padding_bottom"
+        android:paddingTop="@dimen/register_padding_top" >
+
+        <TextView
+            android:layout_width="@dimen/inf_show_text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+            android:text="@string/register_user_account"
+            android:textSize="@dimen/text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/inf_show_user_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_view_margin_left"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_margin_left"
+        android:layout_marginRight="@dimen/register_margin_right"
+        android:layout_marginTop="@dimen/register_margin_bottom"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/register_padding_bottom"
+        android:paddingTop="@dimen/register_padding_top" >
+
+        <TextView
+            android:layout_width="@dimen/inf_show_text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+            android:text="@string/register_user_nickname"
+            android:textSize="@dimen/text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/inf_show_user_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_view_margin_left"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_margin_left"
+        android:layout_marginRight="@dimen/register_margin_right"
+        android:layout_marginTop="@dimen/register_margin_bottom"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/register_padding_bottom"
+        android:paddingTop="@dimen/register_padding_top" >
+
+        <TextView
+            android:layout_width="@dimen/inf_show_text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+            android:text="@string/register_user_gender"
+            android:textSize="@dimen/text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/inf_show_user_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_view_margin_left"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_margin_left"
+        android:layout_marginRight="@dimen/register_margin_right"
+        android:layout_marginTop="@dimen/register_margin_bottom"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/register_padding_bottom"
+        android:paddingTop="@dimen/register_padding_top" >
+
+        <TextView
+            android:layout_width="@dimen/inf_show_text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+            android:text="@string/register_user_school"
+            android:textSize="@dimen/text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/inf_show_user_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_view_margin_left"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_margin_left"
+        android:layout_marginRight="@dimen/register_margin_right"
+        android:layout_marginTop="@dimen/register_margin_bottom"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/register_padding_bottom"
+        android:paddingTop="@dimen/register_padding_top" >
+
+        <TextView
+            android:layout_width="@dimen/inf_show_text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+            android:text="@string/register_user_college"
+            android:textSize="@dimen/text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/inf_show_user_college"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_view_margin_left"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_margin_left"
+        android:layout_marginRight="@dimen/register_margin_right"
+        android:layout_marginTop="@dimen/register_margin_bottom"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/register_padding_bottom"
+        android:paddingTop="@dimen/register_padding_top" >
+
+        <TextView
+            android:layout_width="@dimen/inf_show_text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+            android:text="@string/register_user_mobile"
+            android:textSize="@dimen/text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/inf_show_user_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_view_margin_left"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_margin_left"
+        android:layout_marginRight="@dimen/register_margin_right"
+        android:layout_marginTop="@dimen/register_margin_bottom"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/register_padding_bottom"
+        android:paddingTop="@dimen/register_padding_top" >
+
+        <TextView
+            android:layout_width="@dimen/inf_show_text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+            android:text="@string/register_user_qq"
+            android:textSize="@dimen/text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/inf_show_user_qq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_view_margin_left"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_margin_left"
+        android:layout_marginRight="@dimen/register_margin_right"
+        android:layout_marginTop="@dimen/register_margin_bottom"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/register_padding_bottom"
+        android:paddingTop="@dimen/register_padding_top" >
+
+        <TextView
+            android:layout_width="@dimen/inf_show_text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+            android:text="@string/register_user_interest"
+            android:textSize="@dimen/text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/inf_show_user_interest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_view_margin_left"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_margin_left"
+        android:layout_marginRight="@dimen/register_margin_right"
+        android:layout_marginTop="@dimen/register_margin_bottom"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/register_padding_bottom"
+        android:paddingTop="@dimen/register_padding_top" >
+
+        <TextView
+            android:layout_width="@dimen/inf_show_text_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inf_show_text_view_margin_left"
+            android:text="@string/register_user_estimation"
+            android:textSize="@dimen/text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/inf_show_user_estimation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_view_margin_left"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/inf_show_user_focus"
+        android:layout_width="@dimen/user_new_one_accept_size"
+        android:layout_height="@dimen/user_new_one_accept_size"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/my_inf_ensure_button_margin_right"
+        android:background="@drawable/radio_button_new_one_normal"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size" />
+
+</LinearLayout>

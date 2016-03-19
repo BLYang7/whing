@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:background="@drawable/navigation_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/message_navigation_left"
+            android:layout_width="@dimen/navigation_back_width"
+            android:layout_height="@dimen/navigation_back_height"
+            android:layout_marginLeft="@dimen/navigation_logo_left_margin"
+            android:background="@drawable/navigation_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/navigation_text_logo_margin"
+            android:layout_marginRight="@dimen/new_one_right_margin"
+            android:layout_weight="0.79"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/message_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/new_one_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/navigation_logo_left_margin"
+        android:gravity="center_vertical|bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/system_message_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_letter_read"
+            android:textSize="@dimen/my_inf_text_size" />
+
+        <View
+            android:layout_width="@dimen/my_inf_divider_width"
+            android:layout_height="@dimen/my_inf_divider_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:background="@drawable/ic_divider_vertical" />
+
+        <TextView
+            android:id="@+id/system_message_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_letter_unread"
+            android:textSize="@dimen/my_inf_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_event_line_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_detail_line_margin_top"
+        android:background="@drawable/ic_divider_horizonal" />
+
+    <ListView
+        android:id="@+id/system_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

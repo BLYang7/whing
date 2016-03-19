@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/popup_edit2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/layout_bg1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/popup_edit_text2"
+            android:layout_width="@dimen/letter_chat_textedit_width"
+            android:layout_height="@dimen/letter_chat_textedit_height"
+            android:layout_weight="1"
+            android:background="@drawable/edittext1"
+            android:ems="10"
+            android:textSize="18sp" />
+        <requestFocus/>
+
+        <Button
+            android:id="@+id/popup_edit_btn_send2"
+            android:layout_width="@dimen/letter_chat_button_width"
+            android:layout_height="@dimen/letter_chat_textedit_height"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:text="@string/letter_chat_send" />
+    </LinearLayout>
+
+</LinearLayout>

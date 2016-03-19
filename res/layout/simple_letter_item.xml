@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/simple_message_height"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+     >
+    
+    <com.whing.imgcut.CircleImg
+        android:id="@+id/simple_letter_user_image"
+        android:layout_width="@dimen/simple_message_image_dimen"
+        android:layout_height="@dimen/simple_message_image_dimen"
+        android:layout_marginLeft="@dimen/simple_message_image_margin_left"
+      	android:layout_marginTop="@dimen/simple_message_image_margin_top"
+        android:layout_marginBottom="@dimen/simple_message_image_margin_bottom"
+        android:layout_gravity="center_vertical"
+        />
+    
+    <LinearLayout
+        android:layout_width="@dimen/simple_letter_text_width"
+        android:layout_height="@dimen/simple_message_height"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+        android:id="@+id/simple_letter_item_user_name"
+        android:layout_width="@dimen/simple_letter_text_width"
+        android:layout_height="@dimen/simple_letter_text_height"
+        android:gravity="center_vertical"
+        android:text="null"
+        android:textSize="@dimen/simple_letter_text_size_plus"
+        android:textColor="@color/color_blue"
+        android:padding="@dimen/simple_letter_text_padding"
+        />
+        
+        <TextView
+            android:id="@+id/simple_letter_inf_show"
+            android:layout_width="@dimen/simple_letter_text_width"
+            android:layout_height="@dimen/simple_letter_text_height"
+            android:singleLine="true"
+            android:text="temp"
+            android:textSize="@dimen/simple_letter_text_size"
+            android:paddingLeft="@dimen/simple_letter_text_padding"
+            />
+        
+    </LinearLayout>
+    
+
+    <TextView
+        android:id="@+id/simple_letter_item_time_show"
+        android:layout_width="@dimen/simple_message_time_show_width"
+        android:layout_height="@dimen/simple_message_height"
+        android:layout_gravity="right"
+        android:text="temp"
+        android:textSize="@dimen/simple_message_time_show_text_size"
+        android:gravity="center"
+        />
+</LinearLayout>
